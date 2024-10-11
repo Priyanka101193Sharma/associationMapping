@@ -37,7 +37,7 @@ public class Person implements Serializable{
 	private String paddrs;
 	
 	@OneToMany(targetEntity=PhoneNumber.class,cascade=CascadeType.ALL,
-			       fetch=FetchType.LAZY,mappedBy="personInfo")
+			       fetch=FetchType.LAZY,mappedBy="person")
 	private Set<PhoneNumber> contactDetails;
 
 	@Override
